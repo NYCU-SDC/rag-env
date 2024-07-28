@@ -3,19 +3,15 @@ version: '3.8'
 services:
   app:
     build: ./
-    container_name: fastapt-app
+    container_name: rag-app
     networks:
       - intranet
     volumes:
       - ./app:/code/app
     ports:
-      - "8080:8000"
+      - "22:22"
 
 networks:
   intranet:
     driver: bridge
-
-volumes:
-  postgres_data:
-  mariadb_data:
 
