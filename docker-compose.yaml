@@ -9,7 +9,7 @@ services:
     volumes:
       - ./app:/code/app
     ports:
-      - "22:22"
+      - "7777:22"
 
 networks:
   intranet:
